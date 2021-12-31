@@ -15,7 +15,11 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     
-    # Run our deployment command
+    # Run install
+    - name: Install dependencies
+      run: npm install
+
+      # Run our deployment command
     - name: Install dependencies
       run: npm run prod
 
