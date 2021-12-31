@@ -7,7 +7,6 @@
     "prod": "yarn webpack -- --mode production",
     "dev": "yarn webpack -- --mode development --watch",
     "local": "yarn webpack serve",
-    "postinstall": "node ./node_modules/husky/lib/installer/bin install",
     "deploy": "git push origin `git subtree split --prefix dist master`:gh-pages --force"
   },
   "keywords": [],
@@ -28,10 +27,5 @@
     "url-loader": "^4.1.1",
     "webpack": "^5.64.4",
     "webpack-cli": "^4.9.1"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run prod"
-    }
   }
 }
