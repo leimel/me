@@ -20,8 +20,12 @@ jobs:
       run: npm install
 
       # Run our deployment command
-    - name: Install dependencies
+    - name: Run Prod
       run: npm run prod
+      
+      # Run our deployment command
+    - name: Git commit files
+      run: git add . && git commit -m "Deploy files"
 
     # Run our deployment command
     - name: Deploying the static website to gh-pages
