@@ -17,7 +17,7 @@ jobs:
     
     # Run our deployment command
     - name: Install dependencies
-      run: npm install
+      run: npm run prod
 
     # Run our deployment command
     - name: Deploying the static website to gh-pages
